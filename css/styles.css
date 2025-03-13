@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        rgb(255, 248, 248) 40%, 
+        rgba(255, 255, 255, 0) 48%, 
+        rgb(245, 206, 162) 90% 
+    );
+    color: #333;
+    line-height: 1.6;
+    height: 130vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1.8px solid #ece4e4;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* Styles pour les menus déroulants */
+nav select {
+    padding: 8px 5px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+nav select:hover {
+    border-color: #e16500;
+    border-radius: 10px;
+    color: #e16500;
+    font-weight: bold;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    font-size: 15px;
+    color: #e16500;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px;
+    
+}
+.form-check-label {
+    margin: 0;
+    padding: 0; 
+    gap: 5px;
+    font-size: 14px; 
+    white-space: nowrap;
+    color: #7f7c7c;
+}
+
+
+.radio-container {
+    border: 1px solid #e8dede;
+    border-radius: 30px;
+    padding: 5px;
+    margin: auto;
+    width: 100px;
+}
+
+.form-check-input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #1f1d1d;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-check-input[type="radio"]:checked {
+    background-color: orange;
+    border-color: rgb(255, 255, 255);
+}
+
+.form-check-input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 21px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 1px solid #e4dbdb;
+    
+}
+
+.form-switch .form-check-input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #e16500;
+    top: 1px;
+    left: 1px;
+}
+
+.form-check-label span {
+    color: #333;  
+    border-radius: 20px;
+    padding: 3px 10px;
+    background-color: rgb(233, 233, 233);
+    font-size: 0.8rem;
+}
+
+
+.free{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.free > *{
+    display: inline-block;
+    margin: 0 10px;
+}
+.free p{
+    color: #333;  
+    border-radius: 20px;
+    padding: 3px 10px;
+    background-color: rgb(233, 233, 233);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.free h2{
+    margin-left: 0;
+}
+
+
+main {
+    padding: 50px 10%;
+    text-align: center;
+}
+.pricing-intro {
+    margin-bottom: 50px;
+}
+
+.pricing-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 545;
+}
+
+.pricing-intro p {
+    font-size: 1.5;
+    margin-bottom: 20px;
+    color: #7f7c7c;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.login {
+    color: #333;
+}
+
+.signup {
+    color: #333;
+    padding: 10px;
+    border: none;
+    border: 1.8px solid #ece4e4;
+}
+
+.login:hover {
+    background-color: #e16500;
+    color: white;
+}
+
+.signup:hover {
+    background-color: #e16500;
+    color: white;
+}
+
+.billing-options {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+}
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 550px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan h3 {
+    font-size: 30px;
+    color: black;
+}
+.plan h4{
+    margin-bottom: 10px;
+}
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.plan button {
+    background-color: #191a1c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+.plan p{
+    display: block;
+    margin: 0;
+    color: #aeadad;
+    font-size: 0.rem;
+    margin-bottom: 10px;
+
+}
+.plan h3 span{
+    font-size: 1rem;
+}
+.plan button:hover {
+    background-color:#e16500;
+}
+
+.enterprise-plan {
+    background-color: white;
+}
+
+.enterprise-plan button {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1.8px solid #ece4e4;
+    border-radius: 10px;
+}
+
+.enterprise-plan button:hover {
+    background-color: #e16500;
+    color: white;
+}
+.rounded-checkbox-container .form-check-input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    margin: 5px;
+}
+
+.rounded-checkbox-container .form-check-input[type="checkbox"]:checked {
+    background-color: #f37e24;
+    border-color: #f37e24;
+}
+
+.rounded-checkbox-container .form-check-input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+}
+.plan img{
+    align-items: start;
+    display: flex;
+    width: 50px;
+    margin-bottom: 10px;
+}
+

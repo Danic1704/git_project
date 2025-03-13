@@ -24,4 +24,4 @@
 
 **git commit -m "Message"**
 
-**git commit -am "Message"*
+*git commit -am "Message"*
