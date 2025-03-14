@@ -1,7 +1,7 @@
 `Commandes git`
 
 # git remote -v
-# git init#
+# git init
 # git remote add origin <branch>
 
 ## git fetch origin <branch>
@@ -24,4 +24,4 @@
 
 **git commit -m "Message"**
 
-**git commit -am "Message"**
+*git commit -am "Message"*

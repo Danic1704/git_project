@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <h3>Lostbag</h3>
+            </div>
+    
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    
+            
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+    
+            <nav>
+                
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="fa-solid fa-times"></i>
+                </label>
+    
+                <div class="nav-middle">
+                    <select onchange="window.location.href=this.value;">
+                        <option value="">Product</option>
+                        <option value="feature1.html">Feature 1</option>
+                        <option value="feature2.html">Feature 2</option>
+                        <option value="feature3.html">Feature 3</option>
+                    </select>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="">Resource</option>
+                        <option value="blog.html">Blog</option>
+                        <option value="help-center.html">Help Center</option>
+                        <option value="community.html">Community</option>
+                    </select>
+                    <select onchange="window.location.href=this.value;">
+                        <option value="">Company</option>
+                        <option value="about-us.html">About Us</option>
+                        <option value="careers.html">Careers</option>
+                        <option value="contact.html">Contact</option>
+                    </select>
+                    <a href="#">Pricing</a>
+                    <a href="#">Enterprise</a>
+                </div>
+                <div class="btn">
+                    <a href="#" class="login">Login</a>
+                    <a href="#" class="signup">Sign Up</a>
+                </div>
+            </nav>
+            <label for="menu-toggle" class="menu-overlay"></label>
+            
+        </div>
+    </header>
+    <main>
+        <section class="pricing-intro">
+            <div class="radio-container">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked style="color: rgb(255, 250, 250);">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Pricing
+                </label>
+              </div>              
+            <h1>Flexible pricing plans <br> for every need</h1>
+            <p>Find the perfect plan—whether you're starting out or <br> scaling up with advanced tools and premium support.</p>
+            <div class="billing-options">
+                <div class="form-check form-switch">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Billed monthly</label>
+                    <input class="form-check-input switch" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Billed annually   <span>Save 10%</span></label>
+                </div>
+            </div>
+        </section>
+        <div class="pricing-plans">
+            <!-- Free Plan -->
+            <div class="plan">
+                <div class="contenu">
+                    <div>
+                        <img src="assets/img1.png" alt="">
+                    </div>
+                    <div class="free">
+                        <h2>Free</h2>
+                        <p style="color: black;font-size: 12px;">Started Plan</p>
+                    </div>
+                    <p>Start with the basics and experience LoafBlog <br> at the cost.</p>
+                    <h3>$0 / <span>month</span></h3>
+                    <p>Pause and cancel anytime</p>
+                    <button>Select Plan</button>
+                </div>
+                <h4>Free plan includes;</h4>
+                <div class="features">
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="free-feature1" checked disabled>
+                        <label class="form-check-label" for="free-feature1">Essential event management tools</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="free-feature2" checked disabled>
+                        <label class="form-check-label" for="free-feature2">Basic analytics & reporting</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="free-feature3" checked disabled>
+                        <label class="form-check-label" for="free-feature3">Up to 3 events per month</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="free-feature4" checked disabled>
+                        <label class="form-check-label" for="free-feature4">Community Support</label>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Seeding Plan -->
+            <div class="plan">
+                <div class="contenu">
+                    <div>
+                        <img src="assets/img2.png" alt="">
+                    </div>
+                    <div class="free">
+                        <h2>Seedling</h2>
+                        <p style="color: black; font-size: 12px;">Popular Plan</p>
+                    </div>
+                    <p>Unlock advanced tools and premium support for seamless event management.</p>
+                    <h3>$299 / <span>month</span> </h3>
+                    <p>Pause and cancel anytime</p>
+                    <button>Select Plan</button>
+                </div>
+                <h4>Seedling plan includes;</h4>
+                <div class="features">
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="seeding-feature1" checked disabled>
+                        <label class="form-check-label" for="seeding-feature1">Unlimited events</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="seeding-feature1" checked disabled>
+                        <label class="form-check-label" for="seeding-feature1">AI-powered insignts & <br> recommendations</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="seeding-feature3" checked disabled>
+                        <label class="form-check-label" for="seeding-feature3">Advanced budget tracking</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="seeding-feature4" checked disabled>
+                        <label class="form-check-label" for="seeding-feature4">Priority support</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="seeding-feature5" checked disabled>
+                        <label class="form-check-label" for="seeding-feature5">Team collaboration tools</label>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Enterprise Plan -->
+            <div class="plan enterprise-plan">
+                <div class="contenu">
+                    <div>
+                        <img src="assets/img3.png" alt="">
+                    </div>
+                    <div class="free">
+                        <h2>Enterprise</h2>
+                        <p style="color: black;font-size: 12px;">Company Plan</p>
+                    </div>
+                    <p>For teams that need custom solutions and dedicated support. Contact us for more info.</p>
+                    <h3>$500 / <span>month</span></h3>
+                    <p>Pause and cancel anytime</p>
+                    <button>Contact Us →</button>
+                </div>
+                <h4>Enterprise plan includes;</h4>
+                <div class="features">
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="enterprise-feature1" checked disabled>
+                        <label class="form-check-label" for="enterprise-feature1">Custom integrations</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="enterprise-feature2" checked disabled>
+                        <label class="form-check-label" for="enterprise-feature2">Dedicated account manager</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="enterprise-feature3" checked disabled>
+                        <label class="form-check-label" for="enterprise-feature3">Advanced security & compliance</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="enterprise-feature4" checked disabled>
+                        <label class="form-check-label" for="enterprise-feature4">API access for automation</label>
+                    </div>
+                    <div class="form-check rounded-checkbox-container">
+                        <input class="form-check-input rounded-checkbox" type="checkbox" value="" id="enterprise-feature5" checked disabled>
+                        <label class="form-check-label" for="enterprise-feature5">VIP onboarding & training</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
